@@ -59,6 +59,8 @@ const WebcamStreamCapture = ({ updatePrediction }) => {
         console.log(time)
         updatePrediction(`${videoBlob.data.value} at ${time}` || "")
         setRecordedChunks([]);
+      }else {
+        handleStartCaptureClick()
       }
     }, [recordedChunks]);
 
