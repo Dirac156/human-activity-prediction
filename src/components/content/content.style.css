@@ -1,0 +1,32 @@
+.content {
+    width: 100%;
+    border-radius: 3rem;
+    height: 32.2rem;
+    padding: 0;
+    position: relative;
+}
+
+.content-icon {
+    position: absolute;
+    top: -22rem;
+    left: 3rem;
+    font-size: 6rem;
+    color: #FF6F48;
+}
+
+.card-body {
+    padding: 0;
+    margin: 0 !important;
+    padding: 4rem 2rem 2rem;
+}
+
+.content-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.content-text {
+    font-size: 1.8rem;
+    padding-top: 0;
+    line-height: 2rem;
+}

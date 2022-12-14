@@ -1,0 +1,65 @@
+.prediction {
+    padding: 1rem 10rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+.prediction > * {
+    padding: 0;
+    margin: 0;
+}
+
+.prediction-box {
+    /* margin-top: 5rem; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prediction-signal {
+    border: 10px solid yellowgreen;
+    width: 50%;
+}
+
+.prediction-signal.risk {
+    border-color: yellow;
+}
+
+.prediction-signal.danger {
+    border-color: red;
+    animation-name: dangerAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+}
+
+.prediction-result {
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 5rem;
+}
+
+@keyframes dangerAnimation {
+    0% {
+        border-color: rgba(255, 0, 0, 0.135);
+        /* border-color: blueviolet; */
+    }
+    25% {
+        border-color: red;
+    }
+    50% {
+        border-color: rgba(255, 0, 0, 0.109);
+        /* border-color: blueviolet; */
+    }
+    75%{
+        border-color: red;
+    }
+    100%{
+        border-color: rgba(255, 0, 0, 0.122);
+        /* border-color: blueviolet; */
+    }
+
+}

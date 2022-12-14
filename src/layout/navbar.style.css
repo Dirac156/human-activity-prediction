@@ -1,0 +1,26 @@
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    color: #13183F;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #13183F;
+    font-size: 1.8rem;
+    font-weight: 700;
+    /* padding: 1.5rem 3.5rem; */
+    color: white;
+    border-radius: 5rem;
+    width: 167px;
+    height: 56px;
+}
