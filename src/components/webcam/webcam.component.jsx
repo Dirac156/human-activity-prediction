@@ -52,7 +52,8 @@ const WebcamStreamCapture = ({ updatePrediction }) => {
         const videoBlob = await axios("http://54.221.110.157:8000/upload", {
           method: "POST",
           headers: { 'content-type': 'multipart/form-data' },
-          data: formData
+          data: formData,
+          withCredentials: false,
         }).then((e) => e).catch(err => console.error(err));
         const time = new Date()
         console.log(time)
