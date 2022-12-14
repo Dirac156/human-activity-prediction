@@ -49,7 +49,7 @@ const WebcamStreamCapture = ({ updatePrediction }) => {
         const file = blobToFile(blob, "me.mp4")
         let formData = new FormData();    //formdata object
         formData.append('video', file);
-        const videoBlob = await axios("http://54.221.110.157:8000/upload", {
+        const videoBlob = await axios("https://test.totongaarts.com/upload", {
           method: "POST",
           headers: { 'content-type': 'multipart/form-data' },
           data: formData,
